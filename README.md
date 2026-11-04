@@ -21,9 +21,9 @@ $$\text{Custo do Morador (R\$)} = \left( \text{kWh}_{\text{Individual}} + \frac{
 ```mermaid
 flowchart LR
     subgraph Comodos["Nós Medidores (Cômodos e Áreas Comuns)"]
-        N1["Nó 01: Quarto Morador 1<br/>(Heltec V3 + Potenciômetro/Shunt + LDR)"]
-        N2["Nó 02: Quarto Morador 2<br/>(Heltec V3 / ESP32 + Potenciômetro/Shunt + LDR)"]
-        N3["Nó 03: Área Comum<br/>(Potenciômetro/Shunt + LDR)"]
+        N1["Nó 01: Quarto Morador 1<br/>(Heltec V3 + ACS712 + Potenciômetro + LDR)"]
+        N2["Nó 02: Quarto Morador 2<br/>(Heltec V3 / ESP32 + ACS712 + LDR)"]
+        N3["Nó 03: Área Comum<br/>(ACS712 / Potenciômetro + LDR)"]
     end
 
     subgraph Concentrador["Nó Principal (Gateway)"]
@@ -47,16 +47,16 @@ flowchart LR
 ### Hardware Utilizado
 * **Microcontroladores e Transceptores LoRa:** Placas **Heltec WiFi LoRa 32 V3** (ESP32-S3 + Transceptor LoRa Semtech SX1262 915 MHz + Display OLED 0.96" I2C integrado) e **ESP32**.
 * **Circuito de Medição em Bancada / PCI:**
-  * **Sensoriamento de Carga Elétrica:** Potenciômetro em série com resistor limitador/shunt e filtro capacitivo (100 nF) ligado à porta analógica (ADC de 12 bits, 0–3,3 V).
+  * **Sensoriamento de Corrente Elétrica (ACS712):** Sensor de corrente por efeito Hall **ACS712** (5A/20A/30A) com isolamento galvânico e divisor de tensão resistivo (`10 kΩ` + `20 kΩ`) na saída `OUT` para converter o sinal de `0–5 V` para `0–3,3 V` na porta ADC de 12 bits do Heltec V3 / ESP32 (auxiliado por potenciômetro para controle/variação de carga em bancada).
   * **Detecção de Iluminação Acesa:** Fotoresistor (LDR) em divisor de tensão com resistor de 10 kΩ ligado à porta ADC.
-  * **Placa de Circuito Impresso (PCI):** Placa dedicada para encaixe do Heltec V3 / ESP32 e componentes de medição.
+  * **Placa de Circuito Impresso (PCI):** Placa dedicada para encaixe do Heltec V3 / ESP32, módulo ACS712 e componentes de condicionamento de sinal.
 
 ---
 
 ## 3. Estrutura do Repositório
 
 ```text
-├── Cópia de Requisitos, Especificações Técnicas e Testes.xlsx  # Planilha oficial de Requisitos e Testes
+├── Eng_Requisitos.xlsx                                         # Planilha oficial de Requisitos e Testes
 ├── README.md                                                   # Guia principal do repositório
 ├── 01-requisitos/                                              # Documentação detalhada dos requisitos e testes
 ├── 02-circuito-e-pci/                                          # Esquemático, pinagem, arquivos da PCI e fotos
@@ -73,7 +73,7 @@ flowchart LR
 De acordo com as diretrizes da disciplina, **todos os 6 itens obrigatórios** devem estar presentes para que o projeto seja considerado entregue:
 
 ### Itens Obrigatórios (10 Pontos)
-- [x] **1. Levantamento de Requisitos** *(1,0 pt — Documentação)* → Ver [`Cópia de Requisitos, Especificações Técnicas e Testes.xlsx`](./Cópia%20de%20Requisitos,%20Especificações%20Técnicas%20e%20Testes.xlsx) e [`01-requisitos/`](./01-requisitos/README.md)
+- [x] **1. Levantamento de Requisitos** *(1,0 pt — Documentação)* → Ver [`Eng_Requisitos.xlsx`](./Eng_Requisitos.xlsx) e [`01-requisitos/`](./01-requisitos/README.md)
 - [x] **2. Versionamento de Código no Git** *(Obrigatório)* → Repositório estruturado
 - [ ] **3. Validação de Circuito em Bancada** *(1,0 pt)* → Ver [`02-circuito-e-pci/`](./02-circuito-e-pci/README.md)
 - [ ] **4. Uso de Comunicação LoRa** *(Obrigatório)* → Ver [`03-firmware/`](./03-firmware/README.md)
@@ -88,40 +88,7 @@ De acordo com as diretrizes da disciplina, **todos os 6 itens obrigatórios** de
 
 ---
 
-## 5. Contribuição de Cada Membro da Equipe
-
-> **Observação Obrigatória da Disciplina:** *"Cada apresentação deve constar qual foi a contribuição de cada membro."*
-
-| Integrante | Responsabilidades Principais | Etapas / Pastas Relacionadas |
-| :--- | :--- | :--- |
-| **Marco** | Levantamento de requisitos, arquitetura LoRa/MQTT, validação de circuito e integração | `01-requisitos/`, `02-circuito-e-pci/`, `03-firmware/` |
-| *[Nome do Integrante 2]* | *(Preencher: ex. Projeto e confecção da PCI / Encapsulamento 3D)* | `02-circuito-e-pci/`, `05-encapsulamento-3d/` |
-| *[Nome do Integrante 3]* | *(Preencher: ex. Etapa de Nuvem MQTT, Fluxo Node-RED e Banco de Dados)* | `04-nuvem-nodered/`, `06-apresentacao-e-evidencias/` |
-
----
-
-## 6. Guia Rápido de Git para o Grupo
-
-Para manter o histórico de versionamento organizado (critério avaliado na entrega):
-
-```bash
-# 1. Atualizar seu repositório local antes de começar a trabalhar
-git pull origin main
-
-# 2. Verificar quais arquivos foram alterados
-git status
-
-# 3. Adicionar os arquivos modificados ou criados
-git add .
-
-# 4. Registrar o commit com uma mensagem clara do que foi feito
-git commit -m "docs: atualiza esquematico da PCI e testes de bancada"
-
-# 5. Enviar para o repositório remoto (GitHub / GitLab)
-git push origin main
-```
-
-### Padrão sugerido para mensagens de Commit:
+### Padrão para mensagens de Commit:
 * `docs:` para documentação, relatórios, planilha de requisitos e fotos.
 * `feat:` para novas funcionalidades de firmware, fluxos do Node-RED ou arquivos da PCI.
 * `fix:` para correções de bugs no código ou ajustes no circuito.

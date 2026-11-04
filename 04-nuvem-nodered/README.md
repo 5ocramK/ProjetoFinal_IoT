@@ -52,3 +52,4 @@ O nó `function` do **Node-RED** manterá o último valor de `energia_kwh` de ca
 
 * `fluxos-nodered/flows.json` → Exportação do fluxo completo do Node-RED (*Menu -> Export -> Clipboard -> Download*).
 * `banco-de-dados/` → Script de criação da tabela SQLite/InfluxDB e captura de tela das consultas históricas.
+

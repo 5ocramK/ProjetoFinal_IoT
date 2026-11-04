@@ -70,3 +70,4 @@ Para o medidor da **Área Comum**, o campo `"tipo"` será `"comum"`:
 | **Potência de Transmissão (TX)** | `14 dBm` |
 | **Preamble Length** | `8 símbolos` |
 | **CRC** | `Habilitado (ON)` |
+

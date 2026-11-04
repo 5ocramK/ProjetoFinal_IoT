@@ -47,3 +47,4 @@ Preencha abaixo o detalhamento que irá no slide de **Contribuição Individual*
 ### Integrante 3: [Nome]
 * **Atividades executadas:**
   * *(Descrever atividades realizadas)*
+

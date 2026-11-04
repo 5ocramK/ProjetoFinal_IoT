@@ -24,3 +24,4 @@ O encapsulamento deve alojar a **Placa de Circuito Impresso (PCI)** confeccionad
 * Arquivos de modelagem CAD (`.f3d`, `.step` ou `.scad`).
 * Arquivos de malha prontos para fatiamento e impressão 3D (`caixa_base.stl` e `caixa_tampa.stl`).
 * Fotos da peça impressa em 3D com a PCI montada em seu interior.
+
