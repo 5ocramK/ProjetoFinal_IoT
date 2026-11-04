@@ -20,6 +20,10 @@
   * Exibe no display OLED o último nó recebido, potência, kWh e nível de sinal (`RSSI` e `SNR`).
   * Conecta ao Wi-Fi e publica o pacote JSON recebido no broker **MQTT**.
   * Suporta atualização via Wi-Fi com `ArduinoOTA`.
+* `testes/` → Códigos de **teste isolado de bancada** antes da integração final:
+  * `teste-sensores-acs712-ldr/` (validação e calibração do ACS712, potenciômetro e LDR no ADC).
+  * `teste-lora-ping-pong/` (teste de alcance e perda de pacotes LoRa 915 MHz entre dois Heltec V3).
+  * `teste-wifi-mqtt/` (teste isolado de publicação MQTT e upload OTA).
 
 ---
 
