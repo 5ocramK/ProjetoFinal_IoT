@@ -1,0 +1,44 @@
+RESULTADOS (OUTPUT) - TESTE SENSORES ACS712 / LDR
+
+
+
+
+14:20:28.756 -> -------------------------------------------------------
+14:20:28.756 -> [GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+14:20:28.756 -> [GPIO 3 - POTENC] ADC:  898 | Tensao: 0.771 V | Corrente Sim: 4.67 A
+14:20:28.756 -> [GPIO 2 - LDR   ] ADC: 3669 | Tensao: 2.962 V | Luz Comodo  : ACESA (+60W)
+14:20:28.756 -> >> RESULTADO COMODO -> Potencia: 653.4 W | Acumulado: 17.199 Wh
+14:20:29.756 -> -------------------------------------------------------
+14:20:29.756 -> [GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+14:20:29.756 -> [GPIO 3 - POTENC] ADC:  906 | Tensao: 0.778 V | Corrente Sim: 4.72 A
+14:20:29.756 -> [GPIO 2 - LDR   ] ADC: 3693 | Tensao: 2.976 V | Luz Comodo  : ACESA (+60W)
+14:20:29.756 -> >> RESULTADO COMODO -> Potencia: 658.8 W | Acumulado: 17.382 Wh
+14:20:30.731 -> -------------------------------------------------------
+14:20:30.771 -> [GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+14:20:30.771 -> [GPIO 3 - POTENC] ADC:  913 | Tensao: 0.784 V | Corrente Sim: 4.75 A
+14:20:30.771 -> [GPIO 2 - LDR   ] ADC: 3691 | Tensao: 2.974 V | Luz Comodo  : ACESA (+60W)
+14:20:30.771 -> >> RESULTADO COMODO -> Potencia: 663.4 W | Acumulado: 17.566 Wh
+14:20:31.730 -> -------------------------------------------------------
+14:20:31.772 -> [GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+14:20:31.772 -> [GPIO 3 - POTENC] ADC:  927 | Tensao: 0.795 V | Corrente Sim: 4.82 A
+14:20:31.772 -> [GPIO 2 - LDR   ] ADC: 3691 | Tensao: 2.975 V | Luz Comodo  : ACESA (+60W)
+14:20:31.772 -> >> RESULTADO COMODO -> Potencia: 671.9 W | Acumulado: 17.753 Wh
+14:20:32.756 -> -------------------------------------------------------
+14:20:32.756 -> [GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+14:20:32.756 -> [GPIO 3 - POTENC] ADC:  931 | Tensao: 0.798 V | Corrente Sim: 4.84 A
+14:20:32.756 -> [GPIO 2 - LDR   ] ADC: 3715 | Tensao: 2.987 V | Luz Comodo  : ACESA (+60W)
+14:20:32.756 -> >> RESULTADO COMODO -> Potencia: 674.2 W | Acumulado: 17.940 Wh
+14:20:33.730 -> -------------------------------------------------------
+14:20:33.768 -> [GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+14:20:33.768 -> [GPIO 3 - POTENC] ADC:  925 | Tensao: 0.792 V | Corrente Sim: 4.80 A
+14:20:33.768 -> [GPIO 2 - LDR   ] ADC: 3697 | Tensao: 2.977 V | Luz Comodo  : ACESA (+60W)
+14:20:33.768 -> >> RESULTADO COMODO -> Potencia: 669.6 W | Acumulado: 18.126 Wh
+14:20:34.731 -> -------------------------------------------------------
+14:20:34.772 -> [GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+14:20:34.772 -> [GPIO 3 - POTENC] ADC:  932 | Tensao: 0.798 V | Corrente Sim: 4.84 A
+14:20:34.772 -> [GPIO 2 - LDR   ] ADC: 3690 | Tensao: 2.975 V | Luz Comodo  : ACESA (+60W)
+14:20:34.772 -> >> RESULTADO COMODO -> Potencia: 674.2 W | Acumulado: 18.313 Wh
+14:20:35.731 -> -------------------------------------------------------
+14:20:35.776 -> [GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+14:20:35.776 -> [GPIO 3 - POTENC] ADC:  935 | Tensao: 0.801 V | Corrente Sim: 4.85 A
+14:20:35.776 -> [GPIO 2 - LDR   ] ADC: 3675 | Tensao: 2.966 V | Luz Comodo  : ACESA (+60W)
