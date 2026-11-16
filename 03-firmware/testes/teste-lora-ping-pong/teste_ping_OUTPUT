@@ -1,0 +1,62 @@
+// TESTE COMUNICACAO LORA (PINGPONG)
+// Um Nó envia ping e o outro recebe, no teste, num mesmo computador (mesma porta COM) tivemos que checar em periodos de tempo diferentes ja que 
+// o serial monitor da IDE do Arduino não funcionava com os dois codigos rodando ao mesmo tempo (ja que existia apenas uma porta COM)
+
+
+OUTPUT ENVIADO (MEDIDOR)
+
+14:56:47.460 -> [TX] Enviando pacote 1/100 -> PING:1
+14:56:48.460 -> [TX] Enviando pacote 2/100 -> PING:2
+14:56:49.460 -> [TX] Enviando pacote 3/100 -> PING:3
+14:56:50.502 -> [TX] Enviando pacote 4/100 -> PING:4
+14:56:51.507 -> [TX] Enviando pacote 5/100 -> PING:5
+14:56:52.462 -> [TX] Enviando pacote 6/100 -> PING:6
+14:56:53.506 -> [TX] Enviando pacote 7/100 -> PING:7
+14:56:54.460 -> [TX] Enviando pacote 8/100 -> PING:8
+14:56:55.460 -> [TX] Enviando pacote 9/100 -> PING:9
+14:56:56.464 -> [TX] Enviando pacote 10/100 -> PING:10
+14:56:57.503 -> [TX] Enviando pacote 11/100 -> PING:11
+14:56:58.483 -> [TX] Enviando pacote 12/100 -> PING:12
+14:56:59.505 -> [TX] Enviando pacote 13/100 -> PING:13
+14:57:00.485 -> [TX] Enviando pacote 14/100 -> PING:14
+14:57:01.461 -> [TX] Enviando pacote 15/100 -> PING:15
+14:57:02.502 -> [TX] Enviando pacote 16/100 -> PING:16
+14:57:03.496 -> [TX] Enviando pacote 17/100 -> PING:17
+14:57:04.493 -> [TX] Enviando pacote 18/100 -> PING:18
+14:57:05.461 -> [TX] Enviando pacote 19/100 -> PING:19
+14:57:06.491 -> [TX] Enviando pacote 20/100 -> PING:20
+14:57:07.499 -> [TX] Enviando pacote 21/100 -> PING:21
+14:57:08.494 -> [TX] Enviando pacote 22/100 -> PING:22
+14:57:09.490 -> [TX] Enviando pacote 23/100 -> PING:23
+14:57:10.461 -> [TX] Enviando pacote 24/100 -> PING:24
+
+
+
+OUTPUT RECEBIDO (GATEWAY)
+
+14:55:37.245 -> [RX] Pacote: PING:2 | Recebidos: 2/2 (PDR: 100.0%) | RSSI: -27 dBm | SNR: 12 dB
+14:55:38.276 -> [RX] Pacote: PING:3 | Recebidos: 3/3 (PDR: 100.0%) | RSSI: -27 dBm | SNR: 13 dB
+14:55:39.286 -> [RX] Pacote: PING:4 | Recebidos: 4/4 (PDR: 100.0%) | RSSI: -27 dBm | SNR: 11 dB
+14:55:40.114 -> [RX Ignorado] Pacote externo detectado (7 bytes): PING 50
+14:55:40.280 -> [RX] Pacote: PING:5 | Recebidos: 5/5 (PDR: 100.0%) | RSSI: -27 dBm | SNR: 12 dB
+14:55:41.288 -> [RX] Pacote: PING:6 | Recebidos: 6/6 (PDR: 100.0%) | RSSI: -27 dBm | SNR: 12 dB
+14:55:42.268 -> [RX] Pacote: PING:7 | Recebidos: 7/7 (PDR: 100.0%) | RSSI: -27 dBm | SNR: 12 dB
+14:55:43.153 -> [RX Ignorado] Pacote externo detectado (7 bytes): PING 51
+14:55:43.245 -> [RX] Pacote: PING:8 | Recebidos: 8/8 (PDR: 100.0%) | RSSI: -27 dBm | SNR: 12 dB
+14:55:44.285 -> [RX] Pacote: PING:9 | Recebidos: 9/9 (PDR: 100.0%) | RSSI: -27 dBm | SNR: 12 dB
+14:55:45.276 -> [RX] Pacote: PING:10 | Recebidos: 10/10 (PDR: 100.0%) | RSSI: -27 dBm | SNR: 12 dB
+14:55:46.114 -> [RX Ignorado] Pacote externo detectado (7 bytes): PING 52
+14:55:46.284 -> [RX] Pacote: PING:11 | Recebidos: 11/11 (PDR: 100.0%) | RSSI: -27 dBm | SNR: 12 dB
+14:55:47.245 -> [RX] Pacote: PING:12 | Recebidos: 12/12 (PDR: 100.0%) | RSSI: -27 dBm | SNR: 12 dB
+14:55:48.245 -> [RX] Pacote: PING:13 | Recebidos: 13/13 (PDR: 100.0%) | RSSI: -27 dBm | SNR: 13 dB
+14:55:49.136 -> [RX Ignorado] Pacote externo detectado (7 bytes): PING 53
+14:55:49.285 -> [RX] Pacote: PING:14 | Recebidos: 14/14 (PDR: 100.0%) | RSSI: -27 dBm | SNR: 13 dB
+14:55:50.250 -> [RX] Pacote: PING:15 | Recebidos: 15/15 (PDR: 100.0%) | RSSI: -28 dBm | SNR: 13 dB
+14:55:51.268 -> [RX] Pacote: PING:16 | Recebidos: 16/16 (PDR: 100.0%) | RSSI: -27 dBm | SNR: 12 dB
+14:55:52.138 -> [RX Ignorado] Pacote externo detectado (7 bytes): PING 54
+14:55:52.247 -> [RX] Pacote: PING:17 | Recebidos: 17/17 (PDR: 100.0%) | RSSI: -27 dBm | SNR: 12 dB
+14:55:53.273 -> [RX] Pacote: PING:18 | Recebidos: 18/18 (PDR: 100.0%) | RSSI: -27 dBm | SNR: 12 dB
+14:55:54.291 -> [RX] Pacote: PING:19 | Recebidos: 19/19 (PDR: 100.0%) | RSSI: -27 dBm | SNR: 12 dB
+14:55:55.145 -> [RX Ignorado] Pacote externo detectado (7 bytes): PING 55
+14:55:55.283 -> [RX] Pacote: PING:20 | Recebidos: 20/20 (PDR: 100.0%) | RSSI: -27 dBm | SNR: 12 dB
+14:55:56.280 -> [RX] Pacote: PING:21 | Recebidos: 21/21 (PDR: 100.0%) | RSSI: -26 dBm | SNR: 12 dB
