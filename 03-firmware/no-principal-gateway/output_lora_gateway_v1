@@ -1,0 +1,84 @@
+13:54:50.670 -> ESP-ROM:esp32s3-20210327
+13:54:50.708 -> Build:Mar 27 2021
+13:54:50.708 -> rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+13:54:50.708 -> SPIWP:0xee
+13:54:50.708 -> mode:DIO, clock div:1
+13:54:50.708 -> load:0x3fce2820,len:0x10cc
+13:54:50.708 -> load:0x403c8700,len:0xc2c
+13:54:50.708 -> load:0x403cb700,len:0x30c0
+13:54:50.708 -> entry 0x403c88b8
+13:54:51.240 -> 
+13:54:51.240 -> =======================================================
+13:54:51.286 ->  GATEWAY LORA 915MHz INICIADO - AGUARDANDO PACOTES...  
+13:54:51.286 -> =======================================================
+13:54:56.898 -> -------------------------------------------------------
+13:54:56.898 -> [LoRa RX #1] RSSI: 0 dBm | SNR: 12 dB
+13:54:56.898 -> JSON: {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":1,"tensao_v":127.0,"corrente_a":17.15,"potencia_w":2238.24,"energia_kwh":0.0019,"luz_acesa":true}
+13:54:56.898 -> Resumo -> No: comodo_1 (#1) | I: 17.15 A | P: 2238.24 W | E: 0.0019 kWh | Luz: ACESA
+13:54:59.877 -> -------------------------------------------------------
+13:54:59.909 -> [LoRa RX #2] RSSI: 0 dBm | SNR: 12 dB
+13:54:59.909 -> JSON: {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":2,"tensao_v":127.0,"corrente_a":17.17,"potencia_w":2240.55,"energia_kwh":0.0037,"luz_acesa":true}
+13:54:59.909 -> Resumo -> No: comodo_1 (#2) | I: 17.17 A | P: 2240.55 W | E: 0.0037 kWh | Luz: ACESA
+13:55:02.928 -> -------------------------------------------------------
+13:55:02.928 -> [LoRa RX #3] RSSI: 0 dBm | SNR: 12 dB
+13:55:02.928 -> JSON: {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":3,"tensao_v":127.0,"corrente_a":17.18,"potencia_w":2241.32,"energia_kwh":0.0056,"luz_acesa":true}
+13:55:02.928 -> Resumo -> No: comodo_1 (#3) | I: 17.18 A | P: 2241.32 W | E: 0.0056 kWh | Luz: ACESA
+13:55:05.891 -> -------------------------------------------------------
+13:55:05.891 -> [LoRa RX #4] RSSI: 0 dBm | SNR: 12 dB
+13:55:05.891 -> JSON: {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":4,"tensao_v":127.0,"corrente_a":17.18,"potencia_w":2242.09,"energia_kwh":0.0075,"luz_acesa":true}
+13:55:05.924 -> Re13:55:08.884 -> -------------------------------------------------------
+13:55:08.944 -> [LoRa RX #5] RSSI: 0 dBm | SNR: 12 dB
+13:55:08.944 -> JSON: {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":5,"tensao_v":127.0,"corrente_a":15.91,"potencia_w":2080.45,"energia_kwh":0.0093,"luz_acesa":true}
+13:55:08.944 -> Resumo -> No: comodo_1 (#5) | I: 15.91 A | P: 2080.45 W | E: 0.0093 kWh | Luz: ACESA
+13:55:11.890 -> -------------------------------------------------------
+13:55:11.890 -> [LoRa RX #6] RSSI: 0 dBm | SNR: 12 dB
+13:55:11.891 -> JSON: {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":6,"tensao_v":127.0,"corrente_a":10.88,"potencia_w":1441.61,"energia_kwh":0.0106,"luz_acesa":true}
+13:55:11.934 -> Resumo -> No: comodo_1 (#6) | I: 10.88 A | P: 1441.61 W | E: 0.0106 kWh | Luz: ACESA
+13:55:14.876 -> -------------------------------------------------------
+13:55:14.876 -> [LoRa RX #7] RSSI: 0 dBm | SNR: 12 dB
+13:55:14.970 -> JSON: {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":7,"tensao_v":127.0,"corrente_a":7.94,"potencia_w":1068.30,"energia_kwh":0.0115,"luz_acesa":true}
+13:55:14.970 -> Resumo -> No: comodo_1 (#7) | I: 7.94 A | P: 1068.30 W | E: 0.0115 kWh | Luz: ACESA
+13:55:17.880 -> -------------------------------------------------------
+13:55:17.968 -> [LoRa RX #8] RSSI: 0 dBm | SNR: 12 dB
+13:55:17.968 -> JSON: {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":8,"tensao_v":127.0,"corrente_a":0.42,"potencia_w":113.11,"energia_kwh":0.0120,"luz_acesa":true}
+13:55:17.968 -> Resumo -> No: comodo_1 (#8) | I: 0.42 A | P: 113.11 W | E: 0.0120 kWh | Luz: ACESA
+13:55:20.938 -> -------------------------------------------------------
+13:55:20.938 -> [LoRa RX #9] RSSI: 0 dBm | SNR: 11 dB
+13:55:20.938 -> JSON: {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":9,"tensao_v":127.0,"corrente_a":0.42,"potencia_w":113.11,"energia_kwh":0.0121,"luz_acesa":true}
+13:55:20.938 -> Resumo -> No: comodo_1 (#9) | I: 0.42 A | P: 113.11 W | E: 0.0121 kWh | Luz: ACESA
+13:55:23.915 -> -------------------------------------------------------
+13:55:23.915 -> [LoRa RX #10] RSSI: 0 dBm | SNR: 12 dB
+13:55:23.915 -> JSON: {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":10,"tensao_v":127.0,"corrente_a":0.43,"potencia_w":114.65,"energia_kwh":0.0122,"luz_acesa":true}
+13:55:23.915 -> Resumo -> No: comodo_1 (#10) | I: 0.43 A | P: 114.65 W | E: 0.0122 kWh | Luz: ACESA
+13:55:26.877 -> -------------------------------------------------------
+13:55:26.877 -> [LoRa RX #11] RSSI: 0 dBm | SNR: 12 dB
+13:55:26.924 -> JSON: {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":11,"tensao_v":127.0,"corrente_a":0.42,"potencia_w":113.88,"energia_kwh":0.0123,"luz_acesa":true}
+13:55:26.924 -> Resumo -> No: comodo_1 (#11) | I: 0.42 A | P: 113.88 W | E: 0.0123 kWh | Luz: ACESA
+13:55:29.900 -> -------------------------------------------------------13:55:29.900 -> [LoRa RX #12] RSSI: 0 dBm | SNR: 11 dB
+13:55:29.900 -> JSON: {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":12,"tensao_v":127.0,"corrente_a":0.42,"potencia_w":113.88,"energia_kwh":0.0123,"luz_acesa":true}
+13:55:29.900 -> Resumo -> No: comodo_1 (#12) | I: 0.42 A | P: 113.88 W | E: 0.0123 kWh | Luz: ACESA
+13:55:32.893 -> -------------------------------------------------------
+13:55:32.893 -> [LoRa RX #13] RSSI: 0 dBm | SNR: 12 dB
+13:55:32.893 -> JSON: {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":13,"tensao_v":127.0,"corrente_a":0.43,"potencia_w":114.65,"energia_kwh":0.0124,"luz_acesa":true}
+13:55:32.986 -> Resumo -> No: comodo_1 (#13) | I: 0.43 A | P: 114.65 W | E: 0.0124 kWh | Luz: ACESA
+13:55:35.915 -> -------------------------------------------------------
+13:55:35.915 -> [LoRa RX #14] RSSI: 0 dBm | SNR: 12 dB
+13:55:35.915 -> JSON: {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":14,"tensao_v":127.0,"corrente_a":0.41,"potencia_w":112.34,"energia_kwh":0.0125,"luz_acesa":true}
+13:55:35.915 -> Resumo -> No: comodo_1 (#14) | I: 0.41 A | P: 112.34 W | E: 0.0125 kWh | Luz: ACESA
+13:55:38.896 -> -------------------------------------------------------
+13:55:38.927 -> [LoRa RX #15] RSSI: 0 dBm | SNR: 12 dB
+13:55:38.927 -> JSON: {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":15,"tensao_v":127.0,"corrente_a":0.42,"potencia_w":113.88,"energia_kwh":0.0126,"luz_acesa":true}
+13:55:38.927 -> Resumo -> No: comodo_1 (#15) | I: 0.42 A | P: 113.88 W | E: 0.0126 kWh | Luz: ACESA
+13:55:41.874 -> -------------------------------------------------------
+13:55:41.921 -> [LoRa RX #16] RSSI: 0 dBm | SNR: 12 dB
+13:55:41.921 -> JSON: {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":16,"tensao_v":127.0,"corrente_a":0.42,"potencia_w":113.88,"energia_kwh":0.0127,"luz_acesa":true}
+13:55:41.921 -> Resumo -> No: comodo_1 (#16) | I: 0.42 A | P: 113.88 W | E: 0.0127 kWh | Luz: ACESA
+13:55:44.875 -> -------------------------------------------------------
+13:55:44.967 -> [LoRa RX #17] RSSI: 0 dBm | SNR: 12 dB
+13:55:44.967 -> JSON: {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":17,"tensao_v":127.0,"corrente_a":0.42,"potencia_w":113.88,"energia_kwh":0.0128,"luz_acesa":true}
+13:55:44.967 -> Resumo -> No: comodo_1 (#17) | I: 0.42 A | P: 113.88 W | E: 0.0128 kWh | Luz: ACESA
+13:55:47.895 -> -------------------------------------------------------
+13:55:47.895 -> [LoRa RX #18] RSSI: 0 dBm | SNR: 12 dB
+13:55:47.895 -> JSON: {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":18,"tensao_v":127.0,"corrente_a":0.43,"potencia_w":114.65,"energia_kwh":0.0129,"luz_acesa":true}
+13:55:47.937 -> Resumo -> No: comodo_1 (#18) | I: 0.43 A | P: 114.65 W | E: 0.0129 kWh | Luz: ACESA
+13:55:50.874 -> -------------------------------------------------------sumo -> No: comodo_1 (#4) | I: 17.18 A | P: 2242.09 W | E: 0.0075 kWh | Luz: ACESA
