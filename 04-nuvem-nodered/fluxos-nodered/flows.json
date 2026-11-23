@@ -1,0 +1,144 @@
+[
+  {
+    "id": "tab_medidor_iot",
+    "type": "tab",
+    "label": "Medidor de Energia IoT - UNIFESP",
+    "disabled": false,
+    "info": "Fluxo de recepcao MQTT, calculo de rateio entre moradores + area comum e Dashboard."
+  },
+  {
+    "id": "broker_hivemq_unifesp",
+    "type": "mqtt-broker",
+    "name": "HiveMQ Public Broker",
+    "broker": "broker.hivemq.com",
+    "port": "1883",
+    "clientid": "",
+    "autoConnect": true,
+    "usetls": false,
+    "protocolVersion": "4",
+    "keepalive": "60",
+    "cleansession": true
+  },
+  {
+    "id": "mqtt_in_medidor",
+    "type": "mqtt in",
+    "z": "tab_medidor_iot",
+    "name": "Recebe Leituras MQTT (unifesp/idc/medidor/#)",
+    "topic": "unifesp/idc/medidor/#",
+    "qos": "0",
+    "datatype": "json",
+    "broker": "broker_hivemq_unifesp",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 220,
+    "y": 160,
+    "wires": [
+      [
+        "fn_calcula_rateio",
+        "debug_mqtt_payload"
+      ]
+    ]
+  },
+  {
+    "id": "debug_mqtt_payload",
+    "type": "debug",
+    "z": "tab_medidor_iot",
+    "name": "JSON Recebido do Gateway LoRa",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "payload",
+    "targetType": "msg",
+    "x": 560,
+    "y": 80,
+    "wires": []
+  },
+  {
+    "id": "fn_calcula_rateio",
+    "type": "function",
+    "z": "tab_medidor_iot",
+    "name": "Calcula Rateio (Moradores + Area Comum)",
+    "func": "// Tarifa padrao R$/kWh e numero de moradores\nconst TARIFA_KWH = 0.92;\nconst NUM_MORADORES = 2;\n\nconst data = msg.payload;\nif (!data || !data.node_id) return null;\n\n// Recupera acumulado de cada comodo no contexto do fluxo\nlet kwhComodo1   = flow.get('kwh_comodo_1') || 0;\nlet kwhComodo2   = flow.get('kwh_comodo_2') || 0.150;\nlet kwhAreaComum = flow.get('kwh_area_comum') || 0;\n\nif (data.node_id === 'comodo_1') {\n    kwhComodo1 = Number(data.energia_kwh) || 0;\n    flow.set('kwh_comodo_1', kwhComodo1);\n} else if (data.node_id === 'comodo_2') {\n    kwhComodo2 = Number(data.energia_kwh) || 0;\n    flow.set('kwh_comodo_2', kwhComodo2);\n} else if (data.node_id === 'area_comum') {\n    kwhAreaComum = Number(data.energia_kwh) || 0;\n    flow.set('kwh_area_comum', kwhAreaComum);\n}\n\n// Rateio da Area Comum dividido igualmente entre os moradores\nconst rateioComumPorMorador = kwhAreaComum / NUM_MORADORES;\n\nconst totalKwhMorador1 = kwhComodo1 + rateioComumPorMorador;\nconst totalKwhMorador2 = kwhComodo2 + rateioComumPorMorador;\n\nconst faturaMorador1_RS = Number((totalKwhMorador1 * TARIFA_KWH).toFixed(2));\nconst faturaMorador2_RS = Number((totalKwhMorador2 * TARIFA_KWH).toFixed(2));\nconst faturaTotal_RS    = Number((faturaMorador1_RS + faturaMorador2_RS).toFixed(2));\n\nmsg.payload = {\n    ultimo_no: data.node_id,\n    potencia_atual_w: data.potencia_w,\n    luz_acesa: data.luz_acesa ? 'ACESA' : 'APAGADA',\n    kwh_comodo_1: Number(kwhComodo1.toFixed(3)),\n    kwh_comodo_2: Number(kwhComodo2.toFixed(3)),\n    kwh_area_comum: Number(kwhAreaComum.toFixed(3)),\n    fatura_morador_1_rs: faturaMorador1_RS,\n    fatura_morador_2_rs: faturaMorador2_RS,\n    fatura_total_rs: faturaTotal_RS,\n    timestamp: new Date().toISOString()\n};\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 580,
+    "y": 160,
+    "wires": [
+      [
+        "debug_resultado_rateio"
+      ]
+    ]
+  },
+  {
+    "id": "debug_resultado_rateio",
+    "type": "debug",
+    "z": "tab_medidor_iot",
+    "name": "Resultado do Rateio (R$)",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "payload",
+    "targetType": "msg",
+    "x": 910,
+    "y": 160,
+    "wires": []
+  },
+  {
+    "id": "inject_sim_comodo1",
+    "type": "inject",
+    "z": "tab_medidor_iot",
+    "name": "Simular Quarto 1 (10 kWh)",
+    "props": [
+      {
+        "p": "payload"
+      }
+    ],
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "topic": "unifesp/idc/medidor/comodo_1",
+    "payload": "{\"node_id\":\"comodo_1\",\"tipo\":\"individual\",\"morador\":\"Morador 1\",\"seq\":1,\"tensao_v\":127.0,\"corrente_a\":5.0,\"potencia_w\":635.0,\"energia_kwh\":10.0,\"luz_acesa\":true}",
+    "payloadType": "json",
+    "x": 230,
+    "y": 260,
+    "wires": [
+      [
+        "fn_calcula_rateio"
+      ]
+    ]
+  },
+  {
+    "id": "inject_sim_areacomum",
+    "type": "inject",
+    "z": "tab_medidor_iot",
+    "name": "Simular Area Comum (12 kWh)",
+    "props": [
+      {
+        "p": "payload"
+      }
+    ],
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "topic": "unifesp/idc/medidor/area_comum",
+    "payload": "{\"node_id\":\"area_comum\",\"tipo\":\"comum\",\"morador\":\"Compartilhado\",\"seq\":2,\"tensao_v\":127.0,\"corrente_a\":2.0,\"potencia_w\":254.0,\"energia_kwh\":12.0,\"luz_acesa\":false}",
+    "payloadType": "json",
+    "x": 240,
+    "y": 320,
+    "wires": [
+      [
+        "fn_calcula_rateio"
+      ]
+    ]
+  }
+]
+
