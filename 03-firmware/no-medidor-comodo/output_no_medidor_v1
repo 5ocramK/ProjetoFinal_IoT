@@ -1,0 +1,611 @@
+
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x10cc
+load:0x403c8700,len:0xc2c
+load:0x403cb700,len:0x30c0
+entry 0x403c88b8
+
+=======================================================
+ NO MEDIDOR INICIADO: comodo_1 (Morador 1)
+=======================================================
+Ponto Zero calibrado do ACS712 (GPIO 1): 3160.0 mV (3.160 V)
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   76 | Tensao: 0.070 V | Corrente Sim: 0.42 A
+[GPIO 2 - LDR   ] ADC: 3119 | Tensao: 2.600 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 113.9 W | Acumulado: 0.032 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   77 | Tensao: 0.070 V | Corrente Sim: 0.42 A
+[GPIO 2 - LDR   ] ADC: 3373 | Tensao: 2.782 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 113.9 W | Acumulado: 0.063 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   78 | Tensao: 0.071 V | Corrente Sim: 0.43 A
+[GPIO 2 - LDR   ] ADC: 3201 | Tensao: 2.661 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 114.6 W | Acumulado: 0.095 Wh
+
+>>> [LoRa TX #1] {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":1,"tensao_v":127.0,"corrente_a":0.43,"potencia_w":114.65,"energia_kwh":0.0001,"luz_acesa":true}
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   76 | Tensao: 0.069 V | Corrente Sim: 0.42 A
+[GPIO 2 - LDR   ] ADC: 3067 | Tensao: 2.564 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 113.1 W | Acumulado: 0.127 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   79 | Tensao: 0.070 V | Corrente Sim: 0.42 A
+[GPIO 2 - LDR   ] ADC: 3294 | Tensao: 2.725 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 113.9 W | Acumulado: 0.158 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   78 | Tensao: 0.071 V | Corrente Sim: 0.43 A
+[GPIO 2 - LDR   ] ADC: 3584 | Tensao: 2.912 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 114.6 W | Acumulado: 0.190 Wh
+
+>>> [LoRa TX #2] {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":2,"tensao_v":127.0,"corrente_a":0.43,"potencia_w":114.65,"energia_kwh":0.0002,"luz_acesa":true}
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   79 | Tensao: 0.071 V | Corrente Sim: 0.43 A
+[GPIO 2 - LDR   ] ADC: 3611 | Tensao: 2.928 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 114.6 W | Acumulado: 0.222 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   78 | Tensao: 0.070 V | Corrente Sim: 0.42 A
+[GPIO 2 - LDR   ] ADC: 3631 | Tensao: 2.941 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 113.9 W | Acumulado: 0.253 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   78 | Tensao: 0.071 V | Corrente Sim: 0.43 A
+[GPIO 2 - LDR   ] ADC: 3634 | Tensao: 2.942 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 114.6 W | Acumulado: 0.285 Wh
+
+>>> [LoRa TX #3] {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":3,"tensao_v":127.0,"corrente_a":0.43,"potencia_w":114.65,"energia_kwh":0.0003,"luz_acesa":true}
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   77 | Tensao: 0.071 V | Corrente Sim: 0.43 A
+[GPIO 2 - LDR   ] ADC: 3630 | Tensao: 2.940 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 114.6 W | Acumulado: 0.317 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   77 | Tensao: 0.071 V | Corrente Sim: 0.43 A
+[GPIO 2 - LDR   ] ADC: 3631 | Tensao: 2.941 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 114.6 W | Acumulado: 0.349 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   77 | Tensao: 0.071 V | Corrente Sim: 0.43 A
+[GPIO 2 - LDR   ] ADC: 3627 | Tensao: 2.939 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 114.6 W | Acumulado: 0.381 Wh
+
+>>> [LoRa TX #4] {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":4,"tensao_v":127.0,"corrente_a":0.43,"potencia_w":114.65,"energia_kwh":0.0004,"luz_acesa":true}
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   78 | Tensao: 0.070 V | Corrente Sim: 0.42 A
+[GPIO 2 - LDR   ] ADC: 3592 | Tensao: 2.920 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 113.9 W | Acumulado: 0.413 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   77 | Tensao: 0.071 V | Corrente Sim: 0.43 A
+[GPIO 2 - LDR   ] ADC: 3213 | Tensao: 2.671 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 114.6 W | Acumulado: 0.444 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   78 | Tensao: 0.071 V | Corrente Sim: 0.43 A
+[GPIO 2 - LDR   ] ADC: 3212 | Tensao: 2.668 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 114.6 W | Acumulado: 0.476 Wh
+
+>>> [LoRa TX #5] {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":5,"tensao_v":127.0,"corrente_a":0.43,"potencia_w":114.65,"energia_kwh":0.0005,"luz_acesa":true}
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   79 | Tensao: 0.070 V | Corrente Sim: 0.42 A
+[GPIO 2 - LDR   ] ADC: 3206 | Tensao: 2.665 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 113.9 W | Acumulado: 0.508 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   77 | Tensao: 0.070 V | Corrente Sim: 0.42 A
+[GPIO 2 - LDR   ] ADC: 3200 | Tensao: 2.662 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 113.9 W | Acumulado: 0.539 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   77 | Tensao: 0.071 V | Corrente Sim: 0.43 A
+[GPIO 2 - LDR   ] ADC: 3576 | Tensao: 2.908 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 114.6 W | Acumulado: 0.571 Wh
+
+>>> [LoRa TX #6] {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":6,"tensao_v":127.0,"corrente_a":0.43,"potencia_w":114.65,"energia_kwh":0.0006,"luz_acesa":true}
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   78 | Tensao: 0.070 V | Corrente Sim: 0.42 A
+[GPIO 2 - LDR   ] ADC: 3595 | Tensao: 2.921 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 113.9 W | Acumulado: 0.603 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   78 | Tensao: 0.072 V | Corrente Sim: 0.44 A
+[GPIO 2 - LDR   ] ADC: 3598 | Tensao: 2.920 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 115.4 W | Acumulado: 0.635 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   77 | Tensao: 0.070 V | Corrente Sim: 0.42 A
+[GPIO 2 - LDR   ] ADC: 3601 | Tensao: 2.923 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 113.9 W | Acumulado: 0.667 Wh
+
+>>> [LoRa TX #7] {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":7,"tensao_v":127.0,"corrente_a":0.42,"potencia_w":113.88,"energia_kwh":0.0007,"luz_acesa":true}
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   79 | Tensao: 0.071 V | Corrente Sim: 0.43 A
+[GPIO 2 - LDR   ] ADC: 3608 | Tensao: 2.928 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 114.6 W | Acumulado: 0.698 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   78 | Tensao: 0.071 V | Corrente Sim: 0.43 A
+[GPIO 2 - LDR   ] ADC: 3618 | Tensao: 2.932 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 114.6 W | Acumulado: 0.730 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   78 | Tensao: 0.071 V | Corrente Sim: 0.43 A
+[GPIO 2 - LDR   ] ADC: 3627 | Tensao: 2.938 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 114.6 W | Acumulado: 0.762 Wh
+
+>>> [LoRa TX #8] {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":8,"tensao_v":127.0,"corrente_a":0.43,"potencia_w":114.65,"energia_kwh":0.0008,"luz_acesa":true}
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   77 | Tensao: 0.071 V | Corrente Sim: 0.43 A
+[GPIO 2 - LDR   ] ADC: 3629 | Tensao: 2.939 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 114.6 W | Acumulado: 0.794 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   78 | Tensao: 0.071 V | Corrente Sim: 0.43 A
+[GPIO 2 - LDR   ] ADC: 3538 | Tensao: 2.885 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 114.6 W | Acumulado: 0.826 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   78 | Tensao: 0.069 V | Corrente Sim: 0.42 A
+[GPIO 2 - LDR   ] ADC: 3592 | Tensao: 2.917 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 113.1 W | Acumulado: 0.857 Wh
+
+>>> [LoRa TX #9] {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":9,"tensao_v":127.0,"corrente_a":0.42,"potencia_w":113.11,"energia_kwh":0.0009,"luz_acesa":true}
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   76 | Tensao: 0.069 V | Corrente Sim: 0.42 A
+[GPIO 2 - LDR   ] ADC: 3630 | Tensao: 2.941 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 113.1 W | Acumulado: 0.889 Wh
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x10cc
+load:0x403c8700,len:0xc2c
+load:0x403cb700,len:0x30c0
+entry 0x403c88b8
+
+=======================================================
+ NO MEDIDOR INICIADO: comodo_1 (Morador 1)
+=======================================================
+Ponto Zero calibrado do ACS712 (GPIO 1): 3160.0 mV (3.160 V)
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   77 | Tensao: 0.072 V | Corrente Sim: 0.44 A
+[GPIO 2 - LDR   ] ADC: 3539 | Tensao: 2.888 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 115.4 W | Acumulado: 0.032 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   78 | Tensao: 0.071 V | Corrente Sim: 0.43 A
+[GPIO 2 - LDR   ] ADC: 3010 | Tensao: 2.521 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 114.6 W | Acumulado: 0.064 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   77 | Tensao: 0.071 V | Corrente Sim: 0.43 A
+[GPIO 2 - LDR   ] ADC: 2911 | Tensao: 2.446 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 114.6 W | Acumulado: 0.096 Wh
+
+>>> [LoRa TX #1] {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":1,"tensao_v":127.0,"corrente_a":0.43,"potencia_w":114.65,"energia_kwh":0.0001,"luz_acesa":true}
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   77 | Tensao: 0.070 V | Corrente Sim: 0.42 A
+[GPIO 2 - LDR   ] ADC: 2691 | Tensao: 2.272 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 113.9 W | Acumulado: 0.127 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   78 | Tensao: 0.069 V | Corrente Sim: 0.42 A
+[GPIO 2 - LDR   ] ADC: 2820 | Tensao: 2.376 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 113.1 W | Acumulado: 0.159 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   77 | Tensao: 0.069 V | Corrente Sim: 0.42 A
+[GPIO 2 - LDR   ] ADC: 3373 | Tensao: 2.779 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 113.1 W | Acumulado: 0.190 Wh
+
+>>> [LoRa TX #2] {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":2,"tensao_v":127.0,"corrente_a":0.42,"potencia_w":113.11,"energia_kwh":0.0002,"luz_acesa":true}
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   77 | Tensao: 0.069 V | Corrente Sim: 0.42 A
+[GPIO 2 - LDR   ] ADC: 3485 | Tensao: 2.853 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 113.1 W | Acumulado: 0.222 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   77 | Tensao: 0.069 V | Corrente Sim: 0.42 A
+[GPIO 2 - LDR   ] ADC: 3507 | Tensao: 2.866 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 113.1 W | Acumulado: 0.253 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   76 | Tensao: 0.069 V | Corrente Sim: 0.42 A
+[GPIO 2 - LDR   ] ADC: 3504 | Tensao: 2.866 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 113.1 W | Acumulado: 0.284 Wh
+
+>>> [LoRa TX #3] {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":3,"tensao_v":127.0,"corrente_a":0.42,"potencia_w":113.11,"energia_kwh":0.0003,"luz_acesa":true}
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   77 | Tensao: 0.070 V | Corrente Sim: 0.42 A
+[GPIO 2 - LDR   ] ADC: 3508 | Tensao: 2.867 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 113.9 W | Acumulado: 0.316 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   77 | Tensao: 0.069 V | Corrente Sim: 0.42 A
+[GPIO 2 - LDR   ] ADC: 3514 | Tensao: 2.871 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 113.1 W | Acumulado: 0.348 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   76 | Tensao: 0.069 V | Corrente Sim: 0.42 A
+[GPIO 2 - LDR   ] ADC: 3527 | Tensao: 2.880 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 113.1 W | Acumulado: 0.379 Wh
+
+>>> [LoRa TX #4] {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":4,"tensao_v":127.0,"corrente_a":0.42,"potencia_w":113.11,"energia_kwh":0.0004,"luz_acesa":true}
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   77 | Tensao: 0.070 V | Corrente Sim: 0.42 A
+[GPIO 2 - LDR   ] ADC: 3548 | Tensao: 2.894 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 113.9 W | Acumulado: 0.411 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   77 | Tensao: 0.071 V | Corrente Sim: 0.43 A
+[GPIO 2 - LDR   ] ADC: 3557 | Tensao: 2.898 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 114.6 W | Acumulado: 0.442 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   77 | Tensao: 0.070 V | Corrente Sim: 0.42 A
+[GPIO 2 - LDR   ] ADC: 3555 | Tensao: 2.897 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 113.9 W | Acumulado: 0.474 Wh
+
+>>> [LoRa TX #5] {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":5,"tensao_v":127.0,"corrente_a":0.42,"potencia_w":113.88,"energia_kwh":0.0005,"luz_acesa":true}
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:   78 | Tensao: 0.070 V | Corrente Sim: 0.42 A
+[GPIO 2 - LDR   ] ADC: 3553 | Tensao: 2.896 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 113.9 W | Acumulado: 0.506 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:  230 | Tensao: 0.208 V | Corrente Sim: 1.26 A
+[GPIO 2 - LDR   ] ADC: 3546 | Tensao: 2.888 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 220.1 W | Acumulado: 0.567 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:  600 | Tensao: 0.525 V | Corrente Sim: 3.18 A
+[GPIO 2 - LDR   ] ADC: 3535 | Tensao: 2.883 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 464.1 W | Acumulado: 0.696 Wh
+
+>>> [LoRa TX #6] {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":6,"tensao_v":127.0,"corrente_a":3.18,"potencia_w":464.09,"energia_kwh":0.0007,"luz_acesa":true}
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:  685 | Tensao: 0.598 V | Corrente Sim: 3.62 A
+[GPIO 2 - LDR   ] ADC: 3521 | Tensao: 2.875 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 520.3 W | Acumulado: 0.840 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:  830 | Tensao: 0.720 V | Corrente Sim: 4.36 A
+[GPIO 2 - LDR   ] ADC: 3515 | Tensao: 2.870 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 614.2 W | Acumulado: 1.011 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC:  854 | Tensao: 0.740 V | Corrente Sim: 4.48 A
+[GPIO 2 - LDR   ] ADC: 3509 | Tensao: 2.868 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 629.6 W | Acumulado: 1.186 Wh
+
+>>> [LoRa TX #7] {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":7,"tensao_v":127.0,"corrente_a":4.48,"potencia_w":629.58,"energia_kwh":0.0012,"luz_acesa":true}
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 1076 | Tensao: 0.928 V | Corrente Sim: 5.62 A
+[GPIO 2 - LDR   ] ADC: 3515 | Tensao: 2.871 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 774.3 W | Acumulado: 1.401 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 1221 | Tensao: 1.045 V | Corrente Sim: 6.33 A
+[GPIO 2 - LDR   ] ADC: 3522 | Tensao: 2.875 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 864.3 W | Acumulado: 1.641 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 1584 | Tensao: 1.352 V | Corrente Sim: 8.19 A
+[GPIO 2 - LDR   ] ADC: 3535 | Tensao: 2.884 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 1100.6 W | Acumulado: 1.947 Wh
+
+>>> [LoRa TX #8] {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":8,"tensao_v":127.0,"corrente_a":8.19,"potencia_w":1100.63,"energia_kwh":0.0019,"luz_acesa":true}
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 1839 | Tensao: 1.564 V | Corrente Sim: 9.48 A
+[GPIO 2 - LDR   ] ADC: 3546 | Tensao: 2.891 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 1263.8 W | Acumulado: 2.298 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 2263 | Tensao: 1.923 V | Corrente Sim: 11.65 A
+[GPIO 2 - LDR   ] ADC: 3555 | Tensao: 2.897 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 1540.1 W | Acumulado: 2.726 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 2808 | Tensao: 2.364 V | Corrente Sim: 14.33 A
+[GPIO 2 - LDR   ] ADC: 3563 | Tensao: 2.900 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 1879.6 W | Acumulado: 3.248 Wh
+
+>>> [LoRa TX #9] {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":9,"tensao_v":127.0,"corrente_a":14.33,"potencia_w":1879.56,"energia_kwh":0.0032,"luz_acesa":true}
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 3326 | Tensao: 2.749 V | Corrente Sim: 16.66 A
+[GPIO 2 - LDR   ] ADC: 3561 | Tensao: 2.899 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2175.9 W | Acumulado: 3.852 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 3835 | Tensao: 3.052 V | Corrente Sim: 18.50 A
+[GPIO 2 - LDR   ] ADC: 3552 | Tensao: 2.896 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2409.1 W | Acumulado: 4.521 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3541 | Tensao: 2.887 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 5.214 Wh
+
+>>> [LoRa TX #10] {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":10,"tensao_v":127.0,"corrente_a":19.15,"potencia_w":2492.24,"energia_kwh":0.0052,"luz_acesa":true}
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3527 | Tensao: 2.878 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 5.906 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3513 | Tensao: 2.870 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 6.598 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3508 | Tensao: 2.868 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 7.290 Wh
+
+>>> [LoRa TX #11] {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":11,"tensao_v":127.0,"corrente_a":19.15,"potencia_w":2492.24,"energia_kwh":0.0073,"luz_acesa":true}
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3509 | Tensao: 2.868 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 7.983 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3514 | Tensao: 2.870 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 8.675 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3531 | Tensao: 2.880 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 9.367 Wh
+
+>>> [LoRa TX #12] {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":12,"tensao_v":127.0,"corrente_a":19.15,"potencia_w":2492.24,"energia_kwh":0.0094,"luz_acesa":true}
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3544 | Tensao: 2.889 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 10.060 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3549 | Tensao: 2.892 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 10.752 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3549 | Tensao: 2.892 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 11.444 Wh
+
+>>> [LoRa TX #13] {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":13,"tensao_v":127.0,"corrente_a":19.15,"potencia_w":2492.24,"energia_kwh":0.0114,"luz_acesa":true}
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3550 | Tensao: 2.894 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 12.136 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3547 | Tensao: 2.891 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 12.829 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3539 | Tensao: 2.885 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 13.521 Wh
+
+>>> [LoRa TX #14] {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":14,"tensao_v":127.0,"corrente_a":19.15,"potencia_w":2492.24,"energia_kwh":0.0135,"luz_acesa":true}
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3532 | Tensao: 2.880 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 14.213 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3521 | Tensao: 2.874 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 14.906 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3512 | Tensao: 2.870 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 15.598 Wh
+
+>>> [LoRa TX #15] {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":15,"tensao_v":127.0,"corrente_a":19.15,"potencia_w":2492.24,"energia_kwh":0.0156,"luz_acesa":true}
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3508 | Tensao: 2.866 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 16.290 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3503 | Tensao: 2.863 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 16.982 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3501 | Tensao: 2.865 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 17.675 Wh
+
+>>> [LoRa TX #16] {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":16,"tensao_v":127.0,"corrente_a":19.15,"potencia_w":2492.24,"energia_kwh":0.0177,"luz_acesa":true}
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3507 | Tensao: 2.866 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 18.367 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3512 | Tensao: 2.870 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 19.059 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3520 | Tensao: 2.875 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 19.752 Wh
+
+>>> [LoRa TX #17] {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":17,"tensao_v":127.0,"corrente_a":19.15,"potencia_w":2492.24,"energia_kwh":0.0198,"luz_acesa":true}
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3524 | Tensao: 2.878 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 20.444 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3535 | Tensao: 2.884 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 21.136 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3540 | Tensao: 2.887 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 21.828 Wh
+
+>>> [LoRa TX #18] {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":18,"tensao_v":127.0,"corrente_a":19.15,"potencia_w":2492.24,"energia_kwh":0.0218,"luz_acesa":true}
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3545 | Tensao: 2.891 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 22.521 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3548 | Tensao: 2.893 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 23.213 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3551 | Tensao: 2.894 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 23.905 Wh
+
+>>> [LoRa TX #19] {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":19,"tensao_v":127.0,"corrente_a":19.15,"potencia_w":2492.24,"energia_kwh":0.0239,"luz_acesa":true}
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3551 | Tensao: 2.894 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 24.598 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3555 | Tensao: 2.895 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 25.290 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3548 | Tensao: 2.891 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 25.982 Wh
+
+>>> [LoRa TX #20] {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":20,"tensao_v":127.0,"corrente_a":19.15,"potencia_w":2492.24,"energia_kwh":0.0260,"luz_acesa":true}
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3536 | Tensao: 2.885 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 26.675 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3527 | Tensao: 2.878 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 27.367 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3515 | Tensao: 2.872 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 28.059 Wh
+
+>>> [LoRa TX #21] {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":21,"tensao_v":127.0,"corrente_a":19.15,"potencia_w":2492.24,"energia_kwh":0.0281,"luz_acesa":true}
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3509 | Tensao: 2.868 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 28.751 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3490 | Tensao: 2.856 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 29.444 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3479 | Tensao: 2.850 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 30.136 Wh
+
+>>> [LoRa TX #22] {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":22,"tensao_v":127.0,"corrente_a":19.15,"potencia_w":2492.24,"energia_kwh":0.0301,"luz_acesa":true}
+
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3179 | Tensao: 2.646 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 30.828 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3094 | Tensao: 2.584 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 31.521 Wh
+-------------------------------------------------------
+[GPIO 1 - ACS712] ADC: 4095 | Tensao: 3.160 V | Corrente ACS: 0.00 A
+[GPIO 4 - POTENC] ADC: 4095 | Tensao: 3.160 V | Corrente Sim: 19.15 A
+[GPIO 2 - LDR   ] ADC: 3549 | Tensao: 2.892 V | Luz Comodo  : ACESA (+60W)
+>> RESULTADO COMODO -> Potencia: 2492.2 W | Acumulado: 32.213 Wh
+
+>>> [LoRa TX #23] {"node_id":"comodo_1","tipo":"individual","morador":"Morador 1","seq":23,"tensao_v":127.0,"corrente_a":19.15,"potencia_w":2492.24,"energia_kwh":0.0322,"luz_acesa":true}
